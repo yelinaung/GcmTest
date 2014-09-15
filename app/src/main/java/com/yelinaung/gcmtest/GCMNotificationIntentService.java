@@ -14,15 +14,15 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 /**
  * Created by Ye Lin Aung on 14/09/15.
  */
-public class GCMNotificationIntentService extends IntentService {
+public class GcmNotificationIntentService extends IntentService {
   public static final int NOTIFICATION_ID = 1;
   private static final String MESSAGE_KEY = "m";
 
-  public GCMNotificationIntentService() {
+  public GcmNotificationIntentService() {
     super("GcmIntentService");
   }
 
-  public static final String TAG = "GCMNotificationIntentService";
+  public static final String TAG = "GcmNotificationIntentService";
 
   @Override
   protected void onHandleIntent(Intent intent) {
