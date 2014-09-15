@@ -1,6 +1,8 @@
 GcmTest
 -------
 
+Thanks to [Google Cloud Messaging GCM for Android and Push Notifications](http://javapapers.com/android/google-cloud-messaging-gcm-for-android-and-push-notifications/) Tutorial!
+
 Testing GCM for Android with [PushMeUp](https://github.com/NicosKaralis/pushmeup) gem.
 
 Ruby script
