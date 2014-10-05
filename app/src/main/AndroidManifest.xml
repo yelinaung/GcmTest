@@ -41,15 +41,6 @@
             android:value="@integer/google_play_services_version" />
 
         <service android:name="com.yelinaung.gcmtest.GcmNotificationIntentService" />
-        <service
-            android:name="com.yelinaung.gcmtest.MyService"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
-        <service
-            android:name="com.yelinaung.gcmtest.MyIntentService"
-            android:exported="false" >
-        </service>
     </application>
 
 </manifest>
