@@ -13,11 +13,11 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 /**
  * Created by Ye Lin Aung on 14/09/15.
  */
-public class GcmNotificationIntentService extends IntentService {
+public class GCMNotificationIntentService extends IntentService {
   public static final int NOTIFICATION_ID = 1;
   private static final String MESSAGE_KEY = "msg";
 
-  public GcmNotificationIntentService() {
+  public GCMNotificationIntentService() {
     super("GcmIntentService");
   }
 

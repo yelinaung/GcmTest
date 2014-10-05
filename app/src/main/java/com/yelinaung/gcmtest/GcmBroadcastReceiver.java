@@ -16,7 +16,7 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
     Log.i("onReceive", "GcmBroadcastReceiver");
 
     ComponentName comp =
-        new ComponentName(context.getPackageName(), GcmNotificationIntentService.class.getName());
+        new ComponentName(context.getPackageName(), GCMNotificationIntentService.class.getName());
     startWakefulService(context, (intent.setComponent(comp)));
     setResultCode(Activity.RESULT_OK);
   }
