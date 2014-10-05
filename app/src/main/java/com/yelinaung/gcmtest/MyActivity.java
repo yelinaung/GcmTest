@@ -1,6 +1,7 @@
 package com.yelinaung.gcmtest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,11 +20,16 @@ public class MyActivity extends Activity {
     setContentView(R.layout.activity_my);
 
     gcm = GoogleCloudMessaging.getInstance(this);
+    new RegisterGCMTask().execute();
+
+    if (getIntent().getExtras() != null) {
+      Log.i("extra", "extra -> " + getIntent().getExtras().get("meow"));
+    }
   }
 
   @Override protected void onResume() {
     super.onResume();
-    new RegisterGCMTask().execute();
+    Log.i("onResume", getClass().getSimpleName());
   }
 
   private class RegisterGCMTask extends AsyncTask<Void, Void, String> {
@@ -62,6 +68,13 @@ public class MyActivity extends Activity {
       if (s != null) {
         Log.i("GCM", s);
       }
+    }
+  }
+
+  @Override protected void onNewIntent(Intent intent) {
+    super.onNewIntent(intent);
+    if (intent.getExtras() != null) {
+     Log.i("extra", intent.getExtras().getString("meow"));
     }
   }
 
