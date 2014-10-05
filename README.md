@@ -5,6 +5,7 @@ Thanks to [Google Cloud Messaging GCM for Android and Push Notifications](http:/
 
 Testing GCM for Android with [PushMeUp](https://github.com/NicosKaralis/pushmeup) gem.
 
+
 Ruby script
 ```ruby
 require 'pushmeup'
